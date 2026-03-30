@@ -1,0 +1,35 @@
+:root {
+  --title-color: #291610;
+  --button-main-color: #c63b0c;
+  --button-main-color-border: #bf3f12;
+}
+
+.btn.btn-primary {
+  width: 100%;
+  background-color: var(--button-main-color);
+  border-radius: 20px;
+  border: var(--button-main-color-border) 1px solid;
+}
+
+.content-top-title {
+  color: var(--title-color);
+}
+
+.product-card {
+  width: 100%;
+  max-width: 250px;
+}
+.product-image {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+  display: block;
+}
+
+.content-middle {
+  display: flex;
+  flex-direction: row;
+}/*# sourceMappingURL=main.css.map */

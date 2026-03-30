@@ -1,0 +1,11 @@
+@use './abstracts/variables';
+@use './components/button';
+@use './abstracts/typography';
+@use './components/product-card';
+
+.content {
+    &-middle {
+        display: flex;
+        flex-direction: row;;
+    }
+}

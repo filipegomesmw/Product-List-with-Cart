@@ -1,0 +1,8 @@
+.btn {
+  &.btn-primary {
+    width: 100%;
+    background-color: var(--button-main-color);
+    border-radius: 20px;
+    border: var(--button-main-color-border) 1px solid;
+  }
+}
