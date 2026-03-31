@@ -2,10 +2,15 @@
 @use './components/button';
 @use './abstracts/typography';
 @use './components/product-card';
+@use './components/product-grid';
 
 .content {
     &-middle {
         display: flex;
-        flex-direction: row;;
+        flex-direction: row;
+
+        .phone &, .tablet &{
+            flex-direction: column;
+        }
     }
 }
