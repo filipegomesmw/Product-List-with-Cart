@@ -1,8 +1,32 @@
 .btn {
+  border-radius: 20px;
   &.btn-primary {
     width: 100%;
     background-color: var(--button-main-color);
-    border-radius: 20px;
     border: var(--button-main-color-border) 1px solid;
   }
+
+  &.btn__addtocart {
+    width: 140px;
+    background-color: var(--color-neutral-0);
+    border: var(--color-neutral-6) 2px solid;
+    transform: translateY(-20px);
+    justify-self: center;
+    display: flex;
+    justify-self: center;
+    flex-direction: row;
+    transform: translateY(-20px);
+    justify-content: space-between;
+  }
+}
+
+.container-addtocart {
+  width: 140px;
+  background-color: var(--color-primary);
+  border-radius: 20px;
+  display: flex;
+  justify-self: center;
+  flex-direction: row;
+  transform: translateY(-20px);
+  justify-content: space-between;
 }
