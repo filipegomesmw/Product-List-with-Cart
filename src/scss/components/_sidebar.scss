@@ -1,0 +1,12 @@
+.sidebar {
+    
+    &__wrapper {
+        background-color:var(--color-neutral-0);
+        transform: translateY(-40px);
+        border-radius: 10px;
+        padding: var(--space-base);
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-base);
+    }
+}

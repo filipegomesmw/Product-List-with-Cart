@@ -3,11 +3,14 @@
 @use './abstracts/typography';
 @use './components/product-card';
 @use './components/product-grid';
+@use './components/sidebar';
 
 .content {
+    background-color: var(--color-background);
     &-middle {
         display: flex;
         flex-direction: row;
+        gap: 20px;
 
         .phone &, .tablet &{
             flex-direction: column;

@@ -1,6 +1,7 @@
 @charset "UTF-8";
 :root {
   --title-color: #403123;
+  --color-background: #fcf8f5;
   --color-primary: #c63b0c;
   --button-main-color: #c63b0c;
   --button-main-color-border: #bf3f12;
@@ -49,7 +50,7 @@
   border-radius: 30px;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
   padding: 0 10px;
   transform: translateY(-20px);
   justify-self: center;
@@ -135,9 +136,23 @@
   grid-template-columns: 1fr;
 }
 
+.sidebar__wrapper {
+  background-color: var(--color-neutral-0);
+  transform: translateY(-40px);
+  border-radius: 10px;
+  padding: var(--space-base);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-base);
+}
+
+.content {
+  background-color: var(--color-background);
+}
 .content-middle {
   display: flex;
   flex-direction: row;
+  gap: 20px;
 }
 .phone .content-middle, .tablet .content-middle {
   flex-direction: column;
