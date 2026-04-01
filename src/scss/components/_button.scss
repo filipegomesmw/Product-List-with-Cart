@@ -19,12 +19,20 @@
   &.btn__addtocart {
     width: 140px;
     background-color: var(--color-neutral-0);
+    color: var(--color-neutral-10);
     border: var(--color-neutral-6) 1px solid;
     transform: translateY(-20px);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0 15px;
     justify-self: center;
+    font-size: var(--font-size-xs);
+    gap: 5px;
+
+    & span {
+      color: var(--color-neutral-10);
+      font-size: var(--font-size-xs);
+    }
   }
 }
 

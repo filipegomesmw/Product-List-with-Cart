@@ -23,12 +23,19 @@
 .btn.btn__addtocart {
   width: 140px;
   background-color: var(--color-neutral-0);
+  color: var(--color-neutral-10);
   border: var(--color-neutral-6) 1px solid;
   transform: translateY(-20px);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0 15px;
   justify-self: center;
+  font-size: var(--font-size-xs);
+  gap: 5px;
+}
+.btn.btn__addtocart span {
+  color: var(--color-neutral-10);
+  font-size: var(--font-size-xs);
 }
 
 /* 2. The Quantity Component  */
@@ -118,7 +125,7 @@
 
 .product-grid {
   display: grid;
-  gap: 24px; /* Espaço entre os produtos */
+  gap: 14px; /* Espaço entre os produtos */
   grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
 }
 .tablet .product-grid, .phone .product-grid {

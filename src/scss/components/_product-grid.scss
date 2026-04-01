@@ -1,6 +1,6 @@
 .product-grid {
     display: grid;
-    gap: 24px; /* Espaço entre os produtos */
+    gap: 14px; /* Espaço entre os produtos */
     grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
 
     .tablet &, .phone & {
