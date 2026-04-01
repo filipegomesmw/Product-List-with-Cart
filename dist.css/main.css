@@ -31,11 +31,14 @@
   padding: 0 15px;
   justify-self: center;
   font-size: var(--font-size-xs);
-  gap: 5px;
 }
 .btn.btn__addtocart span {
   color: var(--color-neutral-10);
   font-size: var(--font-size-xs);
+}
+.btn.btn__addtocart img {
+  width: 20px;
+  height: 20px;
 }
 
 /* 2. The Quantity Component  */
@@ -46,21 +49,21 @@
   border-radius: 30px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 0 10px;
   transform: translateY(-20px);
   justify-self: center;
   /* Plus/Minus Buttons */
 }
 .container-addtocart .btn-qty {
-  width: 28px;
-  height: 28px;
-  min-width: 28px;
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
   border-radius: 50%;
   border: 1px solid var(--color-neutral-0);
   background: transparent;
   color: var(--color-neutral-0);
-  font-size: 20px;
+  font-size: var(--font-size-h6);
   padding: 0 0 3px 0;
   line-height: 1;
   display: flex;
