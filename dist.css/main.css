@@ -73,7 +73,7 @@
 .container-addtocart .product__quantity {
   color: var(--color-neutral-0);
   font-weight: bold;
-  font-size: 16px;
+  font-size: var(--font-size-xs);
 }
 
 .content-top-title {
