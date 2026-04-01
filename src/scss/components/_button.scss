@@ -1,32 +1,73 @@
+// Main button style
+
 .btn {
   border-radius: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s;
+
   &.btn-primary {
     width: 100%;
     background-color: var(--button-main-color);
     border: var(--button-main-color-border) 1px solid;
+    color: var(--color-neutral-0);
   }
 
+  // Add to Cart button
   &.btn__addtocart {
     width: 140px;
     background-color: var(--color-neutral-0);
-    border: var(--color-neutral-6) 2px solid;
+    border: var(--color-neutral-6) 1px solid;
     transform: translateY(-20px);
-    justify-self: center;
     display: flex;
-    justify-self: center;
-    flex-direction: row;
-    transform: translateY(-20px);
     justify-content: space-between;
+    padding: 0 15px;
+    justify-self: center;
   }
 }
 
+/* 2. The Quantity Component  */
 .container-addtocart {
   width: 140px;
+  height: 40px;
   background-color: var(--color-primary);
-  border-radius: 20px;
+  border-radius: 30px;
   display: flex;
-  justify-self: center;
-  flex-direction: row;
-  transform: translateY(-20px);
+  align-items: center;
   justify-content: space-between;
+  padding: 0 10px; // Space inside the pill
+  transform: translateY(-20px);
+  justify-self: center;
+
+  /* Plus/Minus Buttons */
+  .btn-qty {
+    // We use a specific class to avoid the "width: 100%" from btn-primary
+    width: 28px;
+    height: 28px;
+    min-width: 28px;
+    border-radius: 50%;
+    border: 1px solid var(--color-neutral-0);
+    background: transparent;
+    color: var(--color-neutral-0);
+    font-size: 20px;
+    padding: 0 0 3px 0;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // 4. Ajuste Óptico Específico para o Minus
+    &[id*="Minus"] {
+       padding-bottom: 3px; // "Empurra" o traço para baixo para alinhar com o +
+    }
+
+  }
+
+  .product__quantity {
+    color: var(--color-neutral-0);
+    font-weight: bold;
+    font-size: 16px;
+  }
 }

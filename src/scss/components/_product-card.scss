@@ -19,6 +19,27 @@
     color: var(--color-neutral-0);
     align-content: center;
   }
+
+  &__category {
+    font-size: var(--font-size-label);
+    color: var(--color-neutral-7);
+  }
+
+  &__name {
+    font-weight: var(--font-bold);
+    color: #463528;
+    font-size: var(--font-size-xs);
+  }
+
+  &__price {
+    font-weight: var(--font-bold);
+    color: var(--color-primary);
+    font-size: var(--font-size-xs);
+  }
+
+  &__detailswrapper {
+    transform: translateY(-15px);
+  }
 }
 
 .border-selected {
