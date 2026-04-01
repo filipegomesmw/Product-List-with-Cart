@@ -80,10 +80,6 @@
   font-size: var(--font-size-xs);
 }
 
-.content-top-title {
-  color: var(--title-color);
-}
-
 .product-card {
   width: 100%;
   max-width: 250px;
@@ -148,6 +144,10 @@
 
 .content {
   background-color: var(--color-background);
+}
+.content-top-title {
+  color: var(--title-color);
+  margin-bottom: var(--space-base);
 }
 .content-middle {
   display: flex;

@@ -1,19 +1,28 @@
-@use './abstracts/variables';
-@use './components/button';
-@use './abstracts/typography';
-@use './components/product-card';
-@use './components/product-grid';
-@use './components/sidebar';
+@use "./abstracts/variables";
+@use "./components/button";
+@use "./abstracts/typography";
+@use "./components/product-card";
+@use "./components/product-grid";
+@use "./components/sidebar";
 
 .content {
-    background-color: var(--color-background);
-    &-middle {
-        display: flex;
-        flex-direction: row;
-        gap: 20px;
-
-        .phone &, .tablet &{
-            flex-direction: column;
-        }
+  background-color: var(--color-background);
+  &-top {
+    &-title {
+      // Title color
+      color: var(--title-color);
+      margin-bottom: var(--space-base);
     }
+  }
+
+  &-middle {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    .phone &,
+    .tablet & {
+      flex-direction: column;
+    }
+  }
 }
