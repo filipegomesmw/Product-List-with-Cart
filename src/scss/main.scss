@@ -4,6 +4,7 @@
 @use "./components/product-card";
 @use "./components/product-grid";
 @use "./components/sidebar";
+@use "./components/cart";
 
 .content {
   background-color: var(--color-background);

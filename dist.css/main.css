@@ -142,6 +142,13 @@
   gap: var(--space-base);
 }
 
+.cart-title {
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+}
+
 .content {
   background-color: var(--color-background);
 }
