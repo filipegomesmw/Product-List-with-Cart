@@ -41,6 +41,10 @@
   width: 20px;
   height: 20px;
 }
+.btn-remove {
+  border: 1px solid var(--color-neutral-6);
+  border-radius: 50%;
+}
 
 /* 2. The Quantity Component  */
 .container-addtocart {
