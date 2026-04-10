@@ -7,7 +7,7 @@
   --button-main-color-border: #bf3f12;
 }
 
-.btn {
+.btn, .btn__confirm {
   border-radius: 20px;
   display: inline-flex;
   align-items: center;
@@ -15,13 +15,13 @@
   cursor: pointer;
   transition: 0.2s;
 }
-.btn.btn-primary {
+.btn.btn-primary, .btn-primary.btn__confirm {
   width: 100%;
   background-color: var(--button-main-color);
   border: var(--button-main-color-border) 1px solid;
   color: var(--color-neutral-0);
 }
-.btn.btn__addtocart {
+.btn.btn__addtocart, .btn__addtocart.btn__confirm {
   width: 140px;
   background-color: var(--color-neutral-0);
   color: var(--color-neutral-10);
@@ -33,17 +33,51 @@
   justify-self: center;
   font-size: var(--font-size-xs);
 }
-.btn.btn__addtocart span {
+.btn.btn__addtocart span, .btn__addtocart.btn__confirm span {
   color: var(--color-neutral-10);
   font-size: var(--font-size-xs);
 }
-.btn.btn__addtocart img {
+.btn.btn__addtocart img, .btn__addtocart.btn__confirm img {
   width: 20px;
   height: 20px;
 }
 .btn-remove {
   border: 1px solid var(--color-neutral-6);
   border-radius: 50%;
+}
+.btn__remove {
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--color-neutral-7);
+  border-radius: 50%;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+.btn__remove img {
+  width: 10px;
+  height: 10px;
+  filter: grayscale(1);
+}
+.btn__remove:hover {
+  border-color: var(--title-color);
+}
+.btn__remove:hover img {
+  filter: none;
+}
+.btn__confirm {
+  width: 100%;
+  background-color: var(--color-primary);
+  color: var(--color-neutral-0);
+  padding: 15px;
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-xs);
+  border: none;
+}
+.btn__confirm:hover {
+  background-color: rgb(149.9142857143, 44.6714285714, 9.0857142857);
 }
 
 /* 2. The Quantity Component  */
