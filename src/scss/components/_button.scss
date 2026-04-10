@@ -1,3 +1,5 @@
+@use "sass:color";
+
 // Main button style
 
 .btn {
@@ -39,11 +41,6 @@
     }
   }
 
-  &-remove {
-    border: 1px solid var(--color-neutral-6);
-    border-radius: 50%;
-  }
-
   &__remove {
     width: 20px;
     height: 20px;
@@ -81,7 +78,10 @@
     border: none;
 
     &:hover {
-      background-color: darken(#c63b0c, 10%); // Manual darken to match primary
+      background-color: color.adjust(
+        #c63b0c,
+        10%
+      ); // Manual darken to match primary
     }
   }
 }
