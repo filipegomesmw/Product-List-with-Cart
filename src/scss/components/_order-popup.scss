@@ -1,0 +1,44 @@
+@use "sass:color";
+
+.order-confirmed {
+  text-align: left;
+
+  &__header {
+    margin-bottom: 32px;
+
+    .icon-success {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      color: var(--title-color);
+      font-size: 2.5rem;
+      line-height: 1.2;
+      margin-bottom: 8px;
+    }
+
+    p {
+      color: var(--color-neutral-7);
+      font-size: var(--font-size-xs);
+    }
+  }
+
+  // The beige container that wraps the product list in the popup
+  &__summary-container {
+    background-color: var(--color-background);
+    border-radius: 8px;
+    padding: 24px;
+    margin-bottom: 32px;
+    
+    // Limits height if there are many items
+    max-height: 300px;
+    overflow-y: auto; 
+
+    // Adjusting the last item border
+    .cart-item:last-of-type {
+      border-bottom: 1px solid var(--color-neutral-4);
+    }
+  }
+}

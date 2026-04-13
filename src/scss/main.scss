@@ -5,6 +5,7 @@
 @use "./components/product-grid";
 @use "./components/sidebar";
 @use "./components/cart";
+@use "./components/order-popup";
 
 .content {
   background-color: var(--color-background);
