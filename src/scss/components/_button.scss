@@ -42,9 +42,9 @@
   }
 
   &__remove {
-    width: 20px;
-    height: 20px;
-    border: 1px solid var(--color-neutral-7);
+    width: 12px;
+    height: 12px;
+    border: 1px solid var(--color-neutral-5);
     border-radius: 50%;
     background: transparent;
     display: flex;
@@ -54,8 +54,8 @@
 
     // Icon inside the remove button
     img {
-      width: 10px;
-      height: 10px;
+      width: 8px;
+      height: 8px;
       filter: grayscale(1); // Keep the X icon subtle
     }
 
@@ -73,15 +73,12 @@
     background-color: var(--color-primary);
     color: var(--color-neutral-0);
     padding: 15px;
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-bold);
     font-size: var(--font-size-xs);
     border: none;
 
     &:hover {
-      background-color: color.adjust(
-        #c63b0c,
-        10%
-      ); // Manual darken to match primary
+      background-color: color.adjust(#c63b0c, $lightness: -10%      ); // Manual darken to match primary
     }
   }
 }

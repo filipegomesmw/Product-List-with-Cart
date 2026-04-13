@@ -1,0 +1,29 @@
+:root {
+  --font-family-base: "Red Hat Text", sans-serif;
+  --font-family-heading: "Red Hat Text", sans-serif;
+}
+
+body {
+  font-family: var(--font-family-base);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-heading);
+}
+
+@font-face {
+  font-family: "Red Hat Text";
+  src: url("../assets/fonts/RedHatText-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Red Hat Text";
+  src: url("../assets/fonts/RedHatText-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+

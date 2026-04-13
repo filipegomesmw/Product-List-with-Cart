@@ -1,7 +1,7 @@
 .cart {
   &-title {
     font-size: 1.5rem;
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-bold);
     margin-bottom: 1rem;
     color: var(--color-primary);
   }
@@ -10,8 +10,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 16px 0;
-    border-bottom: 1px solid var(--color-background);
+    padding: var(--space-s) 0;
+    border-bottom: 1px solid var(--color-neutral-2);
 
     // Thumbnail for the Popup version
     &__thumbnail {
@@ -30,7 +30,7 @@
     }
 
     &__name {
-      font-weight: var(--font-weight-bold);
+      font-weight: var(--font-bold);
       color: var(--title-color);
       font-size: var(--font-size-xs);
       // Ensure text doesn't overflow
@@ -49,22 +49,16 @@
 
     &__quantity {
       color: var(--color-primary);
-      font-weight: var(--font-weight-bold);
+      font-weight: var(--font-bold);
     }
 
     &__unit-price {
-      color: var(--color-neutral-7);
-
-      // Specifically style the "@" if needed
-      &::before {
-        content: "@";
-        margin-right: 4px;
-      }
+      color: var(--color-neutral-6);
     }
 
     &__total-price {
       color: var(--color-neutral-8);
-      font-weight: var(--font-weight-bold);
+      font-weight: var(--font-bold);
     }
   }
 
@@ -81,7 +75,7 @@
 
     &__value {
       font-size: 1.5rem;
-      font-weight: var(--font-weight-bold);
+      font-weight: var(--font-bold);
       color: var(--title-color);
     }
   }
