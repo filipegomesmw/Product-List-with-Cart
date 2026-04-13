@@ -10,25 +10,41 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
+    padding: 16px 0;
     border-bottom: 1px solid var(--color-background);
+
+    // Thumbnail for the Popup version
+    &__thumbnail {
+      width: 48px;
+      height: 48px;
+      border-radius: 4px;
+      object-fit: cover;
+      margin-right: 16px;
+    }
 
     &__info {
       display: flex;
       flex-direction: column;
       gap: 8px;
+      flex-grow: 1; // Allow info to take up remaining space
     }
 
     &__name {
       font-weight: var(--font-weight-bold);
       color: var(--title-color);
       font-size: var(--font-size-xs);
+      // Ensure text doesn't overflow
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 150px;
     }
 
     &__details {
       display: flex;
-      gap: 10px;
+      gap: 12px;
       font-size: var(--font-size-xs);
+      align-items: center;
     }
 
     &__quantity {
@@ -38,6 +54,12 @@
 
     &__unit-price {
       color: var(--color-neutral-7);
+
+      // Specifically style the "@" if needed
+      &::before {
+        content: "@";
+        margin-right: 4px;
+      }
     }
 
     &__total-price {
@@ -50,7 +72,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 20px 0;
+    margin: 24px 0;
 
     &__label {
       font-size: var(--font-size-xs);
