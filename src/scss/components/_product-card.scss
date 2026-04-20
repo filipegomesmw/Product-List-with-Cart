@@ -2,12 +2,13 @@
   &-card {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
     max-width: 250px;
+    margin: 0 auto;
 
     :is(.phone, .tablet) & {
-      max-width: none;
+      max-width: 400px;
     }
   }
   &-image {
@@ -53,9 +54,13 @@
   &__detailswrapper {
     transform: translateY(-15px);
     font-size: var(--font-size-xs);
+    width: 100%;
+    text-align: left;
+    padding: 0 4px;
 
     :is(.phone, .tablet) & {
       font-size: var(--font-size-base);
+      margin-top: 10px;
     }
   }
 }
