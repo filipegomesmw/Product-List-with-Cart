@@ -20,6 +20,7 @@
   // Add to Cart button
   &.btn__addtocart {
     width: 140px;
+    height: 40px;
     background-color: var(--color-neutral-0);
     color: var(--color-neutral-10);
     border: var(--color-neutral-6) 1px solid;
@@ -29,6 +30,15 @@
     padding: 0 15px;
     justify-self: center;
     font-size: var(--font-size-xs);
+    align-self: center;
+
+    :is(.phone, .tablet) & {
+      display: flex;
+      max-width: 140px;
+      margin-inline: 0;
+      font-size: var(--font-size-s);
+      align-self: center;
+    }
 
     & span {
       color: var(--color-neutral-10);
@@ -54,8 +64,8 @@
 
     // Icon inside the remove button
     img {
-      width: 8px;
-      height: 8px;
+      width: 6px;
+      height: 6px;
       filter: grayscale(1); // Keep the X icon subtle
     }
 
@@ -77,8 +87,15 @@
     font-size: var(--font-size-xs);
     border: none;
 
+    :is(.phone, .tablet) & {
+      font-size: var(--font-size-base);
+    }
+
     &:hover {
-      background-color: color.adjust(#c63b0c, $lightness: -10%      ); // Manual darken to match primary
+      background-color: color.adjust(
+        #c63b0c,
+        $lightness: -10%
+      ); // Manual darken to match primary
     }
   }
 }
@@ -90,6 +107,7 @@
   background-color: var(--color-primary);
   border-radius: 30px;
   display: flex;
+  align-self: center;
   align-items: center;
   justify-content: space-between;
   padding: 0 10px; // Space inside the pill
@@ -107,15 +125,22 @@
     background: transparent;
     color: var(--color-neutral-0);
     font-size: var(--font-size-h6);
-    padding: 0 0 4px 1px;
+    padding: 0;
     line-height: 1;
     display: flex;
     align-items: center;
     justify-content: center;
 
+    :is(.phone, .tablet) & {
+      width: 20px !important;
+      height: 20px !important;
+      min-width: 20px;
+      font-size: var(--font-size-s);
+    }
+
     // 4. Ajuste Óptico Específico para o Minus
     &[id*="Minus"] {
-      padding-bottom: 3px; // "Empurra" o traço para baixo para alinhar com o +
+      padding-bottom: 2px; // "Empurra" o traço para baixo para alinhar com o +
     }
   }
 

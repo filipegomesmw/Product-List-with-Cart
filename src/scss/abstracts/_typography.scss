@@ -1,19 +1,16 @@
-:root {
-  --font-family-base: "Red Hat Text", sans-serif;
-  --font-family-heading: "Red Hat Text", sans-serif;
+/* Aplicação Global */
+body, html, .os-internal-ui {
+    font-family: var(--font-family-base);
 }
 
-body {
-  font-family: var(--font-family-base);
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-family-heading);
+/* Garante que os títulos também usam a fonte */
+h1, h2, h3, h4, h5, h6, .content-top-title, .popup-title-confirmation {
+    font-family: var(--font-family-heading);
 }
 
 @font-face {
   font-family: "Red Hat Text";
-  src: url("../assets/fonts/RedHatText-VariableFont_wght.ttf") format("truetype");
+  src: url("/ProductListwithPersistentCart/fonts/RedHatText-VariableFont_wght.ttf") format("truetype");
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
@@ -21,7 +18,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @font-face {
   font-family: "Red Hat Text";
-  src: url("../assets/fonts/RedHatText-Italic-VariableFont_wght.ttf") format("truetype");
+  src: url("/ProductListwithPersistentCart/fonts/RedHatText-Italic-VariableFont_wght.ttf") format("truetype");
   font-weight: 100 900;
   font-style: italic;
   font-display: swap;

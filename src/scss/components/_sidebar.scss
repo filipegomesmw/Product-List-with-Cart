@@ -1,23 +1,36 @@
 .sidebar {
   &__wrapper {
     background-color: var(--color-neutral-0);
-    transform: translateY(-40px);
+    transform: translateY(-60px);
     border-radius: 10px;
     padding: var(--space-base);
     display: flex;
     flex-direction: column;
     gap: var(--space-base);
+
+    :is(.phone, .tablet) & {
+      transform: none;
+    }
   }
+
+  &__middle {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-base);
 
   &__empty-state {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: var(--space-base) 0;
+    font-size: var(--font-size-s);
+    font-weight: var(--font-semi-bold);
+    color: var(--subtitle-color);
+  }
 
     img {
       width: 120px;
-      margin-bottom: 15px;
+      
     }
 
     p {
@@ -35,15 +48,28 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
-    font-size: var(--font-size-xs);
+    font-size: var(--font-size-label);
+    font-weight: var(--font-regular);
+
+    :is(.phone, .tablet) & {
+      font-size: var(--font-size-s);
+    }
 
     span {
+      font-weight: inherit;
+    }
+
+    &__hightlight {
       font-weight: var(--font-bold);
     }
 
     // Icon specific style
     img {
-      width: 20px;
+      width: 16px;
+
+      :is(.phone, .tablet) & {
+        width: 24px;
+      }
     }
   }
 }

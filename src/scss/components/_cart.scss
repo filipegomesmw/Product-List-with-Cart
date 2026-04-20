@@ -1,9 +1,12 @@
 .cart {
   &-title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: var(--font-bold);
-    margin-bottom: 1rem;
     color: var(--color-primary);
+
+    :is(.phone, .tablet) & {
+      font-size: 1.5rem;
+    }
   }
 
   &-item {
@@ -12,11 +15,41 @@
     align-items: center;
     padding: var(--space-s) 0;
     border-bottom: 1px solid var(--color-neutral-2);
+    font-size: var(--font-size-label);
+
+    :is(.phone, .tablet) & {
+      font-size: inherit;
+    }
+
+    &--popup {
+      justify-content: flex-start; // Agrupa imagem e info à esquerda
+      gap: 0; // O espaço será controlado pelas margens internas
+      border-bottom: 1px solid var(--color-neutral-2);
+
+      // No popup, queremos que o preço total vá para o fim da linha
+      .cart-item__total-price {
+        margin-left: auto;
+        font-size: var(--font-size-s);
+        color: var(--title-color); // Cor mais escura como no design
+      }
+
+      // Ajuste de margem para separar a info da imagem
+      .cart-item__info {
+        margin-left: 0;
+        display: flex;
+        flex-direction: row;
+      }
+    }
+
+    &__infopopup{
+    display: flex;
+    flex-direction: column;
+    }
 
     // Thumbnail for the Popup version
     &__thumbnail {
-      width: 48px;
-      height: 48px;
+      width: 42px;
+      height: 42px;
       border-radius: 4px;
       object-fit: cover;
       margin-right: 16px;
@@ -25,31 +58,32 @@
     &__info {
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 4px;
       flex-grow: 1; // Allow info to take up remaining space
+      min-width: 0; // Ensure it can shrink properly in the popup
     }
 
     &__name {
       font-weight: var(--font-bold);
       color: var(--title-color);
-      font-size: var(--font-size-xs);
+      font-size: inherit;
       // Ensure text doesn't overflow
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis;
-      max-width: 150px;
     }
 
     &__details {
       display: flex;
-      gap: 12px;
-      font-size: var(--font-size-xs);
+      gap: 8px;
+      font-size: inherit;
       align-items: center;
     }
 
     &__quantity {
       color: var(--color-primary);
       font-weight: var(--font-bold);
+      margin-right: 4px;
     }
 
     &__unit-price {
@@ -71,12 +105,20 @@
     &__label {
       font-size: var(--font-size-xs);
       color: var(--title-color);
+
+      :is(.phone, .tablet) & {
+        font-size: inherit;
+      }
     }
 
     &__value {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       font-weight: var(--font-bold);
       color: var(--title-color);
+
+      :is(.phone, .tablet) & {
+        font-size: 1.5rem;
+      }
     }
   }
 }

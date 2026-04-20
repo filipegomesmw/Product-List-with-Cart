@@ -1,6 +1,7 @@
+@charset "UTF-8";
 @use "./abstracts/variables";
-@use "./components/button";
 @use "./abstracts/typography";
+@use "./components/button";
 @use "./components/product-card";
 @use "./components/product-grid";
 @use "./components/sidebar";
@@ -13,9 +14,32 @@
     &-title {
       // Title color
       color: var(--title-color);
-      margin-bottom: var(--space-base);
+      margin-bottom: var(--space-s);
       font-size: var(--font-size-h1);
       font-weight: var(--font-bold);
+
+      :is(.phone, .tablet) & {
+        font-size: 50px;
+      }
+      
+
+      &-popup {
+        @extend .content-top-title;
+        margin: 0;
+
+        :is(.phone, .tablet) & {
+          font-size: var(--font-size-h1);
+      }
+    }
+    }
+
+    &-subtitle {
+      font-size: var(--font-size-base);
+      color: var(--subtitle-color);
+
+      :is(.phone, .tablet) & {
+        font-size: var(--font-size-base);
+      }
     }
   }
 
@@ -28,5 +52,18 @@
     .tablet & {
       flex-direction: column;
     }
+  }
+}
+
+.popup-title-confirmation {
+  @extend .content-top-title; // Herda a cor, fonte, peso e a margem padrão
+
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--space-l);
+
+  & img {
+    width: 30px;
+    margin-bottom: var(--space-base);
   }
 }
