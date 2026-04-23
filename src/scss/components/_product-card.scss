@@ -47,7 +47,7 @@
 
   &__price {
     font-weight: var(--font-bold);
-    color: var(--color-primary);
+    color: var(--color-brand-primary);
     font-size: inherit;
   }
 
@@ -67,5 +67,5 @@
 
 .border-selected {
   /* Borda vermelha em redor dos produtos selecionados*/
-  border: 2px solid var(--color-primary);
+  border: 2px solid var(--color-brand-primary);
 }

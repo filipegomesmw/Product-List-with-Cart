@@ -1,19 +1,29 @@
 :root {
 
-  // Fonts
+  /* Fonts */
   --font-family-base: "Red Hat Text", sans-serif;
   --font-family-heading: "Red Hat Text", sans-serif;
 
-  // Title colors
-  --title-color: #403123;
-  --subtitle-color: #a89b97;
+  /* Brand colors */
+  --color-brand-primary: #c63b0c;
+  --color-brand-primary-darker: #bf3f12;
+  --color-brand-primary-hover: #962c09;
 
-  // Background colors
-  --color-background: #fcf8f5;
-  // Primary color
-  --color-primary: #c63b0c;
+  --color-brand-dark: #403123;      
+  --color-brand-dark-alt: #463528;  
+  --color-brand-neutral-soft: #a89b97;
+  --color-brand-bg: #fcf8f5;   
+  
+  /* Outsystems variables mapping */
+  --color-primary: var(--color-brand-primary);
+  --color-background: var(--color-brand-bg);
 
-  // Button colors
-  --button-main-color: #c63b0c;
-  --button-main-color-border: #bf3f12;
+  /* Title colors */
+  --title-color: var(--color-brand-dark);
+  --subtitle-color: var(--color-brand-neutral-soft);
+
+
+  /* Button colors */
+  --button-main-color: var(--color-brand-primary);
+  --button-main-color-border: var(--color-brand-primary-darker);
 }

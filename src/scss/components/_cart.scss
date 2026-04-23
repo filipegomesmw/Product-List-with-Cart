@@ -2,7 +2,7 @@
   &-title {
     font-size: 1.2rem;
     font-weight: var(--font-bold);
-    color: var(--color-primary);
+    color: var(--color-brand-primary);
 
     :is(.phone, .tablet) & {
       font-size: 1.5rem;
@@ -30,7 +30,7 @@
       .cart-item__total-price {
         margin-left: auto;
         font-size: var(--font-size-s);
-        color: var(--title-color); // Cor mais escura como no design
+        color: var(--color-brand-dark); // Cor mais escura como no design
       }
 
       // Ajuste de margem para separar a info da imagem
@@ -65,7 +65,7 @@
 
     &__name {
       font-weight: var(--font-bold);
-      color: var(--title-color);
+      color: var(--color-brand-dark);
       font-size: inherit;
       // Ensure text doesn't overflow
       white-space: nowrap;
@@ -81,7 +81,7 @@
     }
 
     &__quantity {
-      color: var(--color-primary);
+      color: var(--color-brand-primary);
       font-weight: var(--font-bold);
       margin-right: 4px;
     }
@@ -104,7 +104,7 @@
 
     &__label {
       font-size: var(--font-size-xs);
-      color: var(--title-color);
+      color: var(--color-brand-dark);
 
       :is(.phone, .tablet) & {
         font-size: inherit;
@@ -114,7 +114,7 @@
     &__value {
       font-size: 1.3rem;
       font-weight: var(--font-bold);
-      color: var(--title-color);
+      color: var(--color-brand-dark);
 
       :is(.phone, .tablet) & {
         font-size: 1.5rem;
