@@ -92,10 +92,7 @@
     }
 
     &:hover {
-      background-color: color.adjust(
-        #c63b0c,
-        $lightness: -10%
-      ); // Manual darken to match primary
+      background-color: var(--color-brand-primary-hover);
     }
   }
 }
