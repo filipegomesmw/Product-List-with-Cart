@@ -20,6 +20,9 @@
   /* Button colors */
   --button-main-color: var(--color-brand-primary);
   --button-main-color-border: var(--color-brand-primary-darker);
+  /* Border Radius Custom */
+  --border-radius-medium: 8px; /* Images and boxes */
+  --border-radius-large: 10px; /* Sidebar */
 }
 
 /* Aplicação Global */
@@ -238,8 +241,8 @@ h1, h2, h3, h4, h5, h6, .content-top-title, .content-top-title-popup, .popup-tit
 
 .product-grid {
   display: grid;
-  gap: 14px; /* Espaço entre os produtos */
-  grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+  gap: var(--space-m);
+  grid-template-columns: repeat(3, 1fr);
 }
 .tablet .product-grid, .phone .product-grid {
   grid-template-columns: 1fr;
@@ -427,17 +430,6 @@ h1, h2, h3, h4, h5, h6, .content-top-title, .content-top-title-popup, .popup-tit
 .order-confirmed__header p {
   color: var(--color-neutral-7);
   font-size: var(--font-size-xs);
-}
-.order-confirmed__summary-container {
-  background-color: var(--color-background);
-  border-radius: 8px;
-  padding: 24px;
-  margin-bottom: 32px;
-  max-height: 300px;
-  overflow-y: auto;
-}
-.order-confirmed__summary-container .cart-item:last-of-type {
-  border-bottom: 1px solid var(--color-neutral-4);
 }
 
 .content {

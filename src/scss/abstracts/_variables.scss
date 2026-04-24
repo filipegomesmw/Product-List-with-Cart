@@ -22,8 +22,11 @@
   --title-color: var(--color-brand-dark);
   --subtitle-color: var(--color-brand-neutral-soft);
 
-
   /* Button colors */
   --button-main-color: var(--color-brand-primary);
   --button-main-color-border: var(--color-brand-primary-darker);
+
+  /* Border Radius Custom */
+  --border-radius-medium: 8px;   /* Images and boxes */
+  --border-radius-large: 10px;    /* Sidebar */
 }

@@ -1,10 +1,12 @@
-.product-grid {
-  display: grid;
-  gap: 14px; /* Espaço entre os produtos */
-  grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais */
+.product {
+  &-grid {
+    display: grid;
+    gap: var(--space-m);
+    grid-template-columns: repeat(3, 1fr);
 
-  .tablet &,
-  .phone & {
-    grid-template-columns: 1fr;
+    .tablet &,
+    .phone & {
+      grid-template-columns: 1fr;
+    }
   }
 }

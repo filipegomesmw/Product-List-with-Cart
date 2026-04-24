@@ -25,20 +25,5 @@
     }
   }
 
-  // The beige container that wraps the product list in the popup
-  &__summary-container {
-    background-color: var(--color-background);
-    border-radius: 8px;
-    padding: 24px;
-    margin-bottom: 32px;
-    
-    // Limits height if there are many items
-    max-height: 300px;
-    overflow-y: auto; 
-
-    // Adjusting the last item border
-    .cart-item:last-of-type {
-      border-bottom: 1px solid var(--color-neutral-4);
-    }
-  }
+  
 }
