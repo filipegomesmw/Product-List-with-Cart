@@ -2,7 +2,7 @@
   &__wrapper {
     background-color: var(--color-neutral-0);
     transform: translateY(-60px);
-    border-radius: 10px;
+    border-radius: var(--border-radius-large);
     padding: var(--space-base);
     display: flex;
     flex-direction: column;
@@ -42,12 +42,12 @@
 
   &__delivery-note {
     background-color: var(--color-background);
-    padding: 12px;
-    border-radius: 8px;
+    padding: var(--space-base);
+    border-radius: var(--border-radius-large);
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap:  var(--space-s);
     font-size: var(--font-size-label);
     font-weight: var(--font-regular);
 
@@ -65,10 +65,12 @@
 
     // Icon specific style
     img {
-      width: 16px;
+      width: var(--font-size-h6);
+      height: var(--font-size-h6);
 
       :is(.phone, .tablet) & {
         width: 24px;
+        height: 24px;
       }
     }
   }

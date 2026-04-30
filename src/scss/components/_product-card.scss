@@ -16,13 +16,13 @@
     height: auto;
     aspect-ratio: 1/1;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: var(--border-radius-large);
     display: block;
     border: 2px solid transparent;
 
     :is(.phone, .tablet) & {
       aspect-ratio: 3/2;
-      border-radius: 8px;
+      border-radius: var(--border-radius-large);
       object-fit: cover;
     }
   }
@@ -52,7 +52,7 @@
   }
 
   &__detailswrapper {
-    transform: translateY(-15px);
+    transform: translateY(calc(var(--space-base) * -1));
     font-size: var(--font-size-xs);
     width: 100%;
     text-align: left;
@@ -60,7 +60,7 @@
 
     :is(.phone, .tablet) & {
       font-size: var(--font-size-base);
-      margin-top: 10px;
+      margin-top: var(--space-s);
     }
   }
 }

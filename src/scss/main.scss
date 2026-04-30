@@ -46,7 +46,7 @@
   &-middle {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: var(--space-m);
 
     .phone &,
     .tablet & {

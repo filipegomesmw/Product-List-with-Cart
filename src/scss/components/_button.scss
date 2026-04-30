@@ -3,7 +3,7 @@
 // Main button style
 
 .btn {
-  border-radius: 20px;
+  border-radius: var(--border-radius-rounded);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -27,7 +27,7 @@
     transform: translateY(-20px);
     display: flex;
     justify-content: space-around;
-    padding: 0 15px;
+    padding: 0 var(--space-base);
     justify-self: center;
     font-size: var(--font-size-xs);
     align-self: center;
@@ -82,7 +82,7 @@
     width: 100%;
     background-color: var(--color-brand-primary);
     color: var(--color-neutral-0);
-    padding: 15px;
+    padding: var(--space-base);
     font-weight: var(--font-bold);
     font-size: var(--font-size-xs);
     border: none;
@@ -106,21 +106,21 @@
   width: 140px;
   height: 40px;
   background-color: var(--color-brand-primary);
-  border-radius: 30px;
+  border-radius: var(--border-radius-rounded);
   display: flex;
   align-self: center;
   align-items: center;
   justify-content: space-between;
-  padding: 0 10px; // Space inside the pill
+  padding: 0 var(--space-s);
   transform: translateY(-20px);
   justify-self: center;
 
   /* Plus/Minus Buttons */
   .btn-qty {
     // We use a specific class to avoid the "width: 100%" from btn-primary
-    width: 18px;
-    height: 18px;
-    min-width: 18px;
+    width: var(--font-size-h6);
+    height: var(--font-size-h6);
+    min-width: var(--font-size-h6);
     border-radius: var(--border-radius-circle);
     border: 1px solid var(--color-neutral-0);
     background: transparent;

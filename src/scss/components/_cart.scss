@@ -52,13 +52,13 @@
       height: 42px;
       border-radius: var(--border-radius-soft);
       object-fit: cover;
-      margin-right: 16px;
+      margin-right: var(--space-base);
     }
 
     &__info {
       display: flex;
       flex-direction: column;
-      gap: 4px;
+      gap: var(--space-xs);
       flex-grow: 1; // Allow info to take up remaining space
       min-width: 0; // Ensure it can shrink properly in the popup
     }
@@ -75,7 +75,7 @@
 
     &__details {
       display: flex;
-      gap: 8px;
+      gap: var(--space-s);
       font-size: inherit;
       align-items: center;
     }
@@ -83,7 +83,7 @@
     &__quantity {
       color: var(--color-brand-primary);
       font-weight: var(--font-bold);
-      margin-right: 4px;
+      margin-right: var(--space-xs);
     }
 
     &__unit-price {

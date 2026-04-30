@@ -29,4 +29,11 @@
   /* Border Radius Custom */
   --border-radius-medium: 8px;   /* Images and boxes */
   --border-radius-large: 10px;    /* Sidebar */
+
+  /* Icon sizes based on OutSystems variables */
+    --icon-size-s:  var(--space-s);   /* 8px */
+    --icon-size-m:  var(--space-m);   /* 16px */
+    --icon-size-l:  var(--space-l);   /* 24px */
+    --icon-size-xl: var(--space-xl);  /* 32px */
+    --icon-size-xxl: var(--space-xxl); /* 48px */
 }
