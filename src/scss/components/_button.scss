@@ -55,7 +55,7 @@
     width: 12px;
     height: 12px;
     border: 1px solid var(--color-neutral-5);
-    border-radius: 50%;
+    border-radius: var(--border-radius-circle);
     background: transparent;
     display: flex;
     align-items: center;
@@ -95,6 +95,10 @@
       background-color: var(--color-brand-primary-hover);
     }
   }
+
+  &__closepopup {
+    text-align: end;
+  }
 }
 
 /* 2. The Quantity Component  */
@@ -117,7 +121,7 @@
     width: 18px;
     height: 18px;
     min-width: 18px;
-    border-radius: 50%;
+    border-radius: var(--border-radius-circle);
     border: 1px solid var(--color-neutral-0);
     background: transparent;
     color: var(--color-neutral-0);
@@ -145,5 +149,11 @@
     color: var(--color-neutral-0);
     font-weight: bold;
     font-size: var(--font-size-xs);
+  }
+}
+
+.icon {
+  &-close {
+    font-size: var(--font-size-h5);
   }
 }

@@ -96,7 +96,7 @@ h1, h2, h3, h4, h5, h6, .content-top-title, .content-top-title-popup, .popup-tit
   width: 12px;
   height: 12px;
   border: 1px solid var(--color-neutral-5);
-  border-radius: 50%;
+  border-radius: var(--border-radius-circle);
   background: transparent;
   display: flex;
   align-items: center;
@@ -129,6 +129,9 @@ h1, h2, h3, h4, h5, h6, .content-top-title, .content-top-title-popup, .popup-tit
 .btn__confirm:hover {
   background-color: var(--color-brand-primary-hover);
 }
+.btn__closepopup {
+  text-align: end;
+}
 
 /* 2. The Quantity Component  */
 .container-addtocart {
@@ -149,7 +152,7 @@ h1, h2, h3, h4, h5, h6, .content-top-title, .content-top-title-popup, .popup-tit
   width: 18px;
   height: 18px;
   min-width: 18px;
-  border-radius: 50%;
+  border-radius: var(--border-radius-circle);
   border: 1px solid var(--color-neutral-0);
   background: transparent;
   color: var(--color-neutral-0);
@@ -173,6 +176,10 @@ h1, h2, h3, h4, h5, h6, .content-top-title, .content-top-title-popup, .popup-tit
   color: var(--color-neutral-0);
   font-weight: bold;
   font-size: var(--font-size-xs);
+}
+
+.icon-close {
+  font-size: var(--font-size-h5);
 }
 
 .product-card {
@@ -350,7 +357,7 @@ h1, h2, h3, h4, h5, h6, .content-top-title, .content-top-title-popup, .popup-tit
 .cart-item__thumbnail {
   width: 42px;
   height: 42px;
-  border-radius: 4px;
+  border-radius: var(--border-radius-soft);
   -o-object-fit: cover;
      object-fit: cover;
   margin-right: 16px;
